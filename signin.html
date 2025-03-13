@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In</title>
+    <link rel="icon" type="image/png" href="Images/favicon2.png" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="CSS/Signcss.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container"></div>
+      <!-- Left Image -->
+
+      <div class="right-container">
+        <h2>Sign in</h2>
+        <p><a href="#">Create an account</a></p>
+
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="rememberMe" />
+          <label for="rememberMe">Remember me</label>
+        </div>
+
+        <button class="btn" onclick="signIn()">Sign in</button>
+
+        <button class="btn google-btn" onclick="redirectToGoogle()">
+          <img src="Images/google.webp" alt="Google Logo" />
+          Sign in with Google
+        </button>
+
+        <a href="#" class="forgot-password">Forgotten your password?</a>
+      </div>
+    </div>
+    <script src="JS/signscript.js"></script>
+  </body>
+</html>
